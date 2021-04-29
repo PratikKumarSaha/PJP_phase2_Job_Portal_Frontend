@@ -19,7 +19,7 @@ function validateform(){
 	var temp = document.getElementById("user_id").value;
 	if(temp.length<8) 
 	{
-		alert("Enter 8 character User ID");
+		document.getElementById("user_val").innerHTML = "Error : Enter 8 character User ID.";
 		document.getElementById("login_form").reset();
 		return false;
 		
@@ -28,7 +28,7 @@ function validateform(){
 	var sA = startWithA(temp);
 	if( (sU || sA) == false )
 	{
-		alert("User must start with U or A");
+		document.getElementById("user_val").innerHTML = "Error : User ID must start with U or A.";
 		document.getElementById("login_form").reset();
 		return false;
 	}
@@ -37,10 +37,6 @@ function validateform(){
 
 		
 	/*else { 
-	f n f display
-	t n f not display
-	f n t not display
-	t n t not display
 	
 	document.getElementById("login").addEventListener("submit", (event) => {
 	var ans = document.getElementById("user_id").value;
