@@ -21,11 +21,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 body {
-  background: #0f4869;
-  background: -webkit-linear-gradient(to top, #0f4869, #78c7f5);
-  background: -moz-linear-gradient(to top, #0f4869, #78c7f5);
-  background: -o-linear-gradient(to top, #0f4869, #78c7f5);
-  background: linear-gradient(to top, #0f4869, #78c7f5);
+  
+  background: linear-gradient(to top, #1a5f87, #bddff2);
+  
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
@@ -39,11 +37,13 @@ h1 {
   text-transform: capitalize;
   letter-spacing: 4px;
   font-family: 'Roboto', sans-serif;
+
 }
 
 /*-- main --*/
 .main-logINlayouts {
   padding: 3em 0 1em;
+  
 }
 
 .main-agileinfo {
@@ -55,6 +55,12 @@ h1 {
 
 .agileits-top {
   padding: 3em;
+  border-style: groove;
+  border-width: 3px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-color: #cad5db;
+  background-color : #1a5f87;
 }
 
 input[type="text"], input[type="email"] {
@@ -76,7 +82,11 @@ input[type="text"], input[type="email"] {
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
-
+#user_val{
+	text-align: left;
+	color : yellow;
+	font-family: 'Roboto', sans-serif;
+}
 input.email, input.text.logINlpass {
   margin: 2em 0;
 }
